@@ -31,7 +31,7 @@
 
 <p>Simples blog feito em HTML,TailwindCss e JS, criada para treinar logica e conceitos</p>
 
-Site online:https://candid-marzipan-1dac70.netlify.app/
+Site online:https://blogeasyshop.netlify.app/
 
 ## 🏁 Iniciando o projeto
 
