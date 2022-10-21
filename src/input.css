@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	h2 {
+		@apply text-xl font-semibold text-gray-700 hover:text-blue-500 transition font-Roboto;
+	}
+	h3 {
+		@apply text-xl font-semibold font-Roboto;
+	}
+	h5 {
+		@apply font-Roboto font-semibold transition group-hover:text-blue-500 leading-5 text-sm;
+	}
+	p {
+		@apply text-sm mt-2;
+	}
+}
+@layer components {
+	.nav-links {
+		@apply font-semibold text-base hover:text-blue-700 transition;
+	}
+	.sidebar {
+		@apply container mx-auto px-4 flex;
+	}
+	.sidebar-main,
+	.social-sidebar {
+		@apply bg-white shadow-sm shadow-white rounded-xl p-4  mt-4 font-Roboto;
+	}
+	.center-items-category {
+		@apply items-center;
+	}
+	.sidebar-links {
+		@apply font-semibold leading-4 flex hover:text-blue-700 transition  uppercase;
+	}
+	.sidebar-randomPost-img,
+	.popular-posts-img,
+	.view-comments-img {
+		@apply h-14 w-20 rounded object-cover hover:brightness-110 flex-shrink-0;
+	}
+	.sidebar-randomPost-links {
+		@apply flex;
+	}
+	.sidebar-randomPost-date {
+		@apply flex text-gray-400 text-sm items-center;
+	}
+	.mainbar-top {
+		@apply flex bg-white p-4 justify-between shadow shadow-sm  rounded-sm items-center;
+	}
+	.mainbar-body {
+		@apply flex-col  flex bg-white p-4 shadow shadow-sm    rounded-sm;
+	}
+	.mainbar-button {
+		@apply text-white py-1 px-3 uppercase bg-blue-500 rounded-xl text-sm border border-blue-500 hover:text-blue-500 hover:bg-transparent transition;
+	}
+	.mainbar-img {
+		@apply w-full object-cover transform hover:scale-110 transition duration-500;
+	}
+	.mainbar-footer {
+		@apply mt-3 flex space-x-4;
+	}
+	.main-footer-icon {
+		@apply flex text-gray-400 text-sm items-center;
+	}
+	.social-top,
+	.tags {
+		@apply flex  gap-2 ml-2 mt-2;
+	}
+	.social-icons {
+		@apply border border-gray-300 text-base  h-6 w-6  flex justify-center items-center;
+	}
+	.quote {
+		@apply text-gray-500 bg-green-200 border border-green-600 p-4;
+	}
+	.view-info {
+		@apply flex flex-col;
+	}
+	.view-button-coments {
+		@apply text-gray-500 text-xs mb-2 border border-gray-200 rounded-lg shadow-lg px-2 py-1;
+	}
+}
