@@ -21,11 +21,11 @@
 		@apply font-semibold text-base hover:text-blue-700 transition;
 	}
 	.sidebar {
-		@apply container mx-auto px-4 flex;
+		@apply container mx-auto px-4 flex flex-wrap lg:flex-nowrap;
 	}
 	.sidebar-main,
 	.social-sidebar {
-		@apply bg-white shadow-sm shadow-white rounded-xl p-4  mt-4 font-Roboto;
+		@apply bg-white shadow-sm shadow-white rounded-xl p-4  mt-4 font-Roboto flex-wrap lg:flex-nowrap;
 	}
 	.center-items-category {
 		@apply items-center;
@@ -45,7 +45,7 @@
 		@apply flex text-gray-400 text-sm items-center;
 	}
 	.mainbar-top {
-		@apply flex bg-white p-4 justify-between shadow shadow-sm  rounded-sm items-center;
+		@apply flex bg-white p-4 justify-between shadow shadow-sm  rounded-sm items-center flex-wrap lg:flex-nowrap;
 	}
 	.mainbar-body {
 		@apply flex-col  flex bg-white p-4 shadow shadow-sm    rounded-sm;
@@ -77,5 +77,8 @@
 	}
 	.view-button-coments {
 		@apply text-gray-500 text-xs mb-2 border border-gray-200 rounded-lg shadow-lg px-2 py-1;
+	}
+	.footer {
+		@apply flex justify-center  py-4 border-t;
 	}
 }
