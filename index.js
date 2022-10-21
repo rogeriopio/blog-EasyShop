@@ -1,6 +1,7 @@
 const open_sidebar = document.querySelector('#open_sidebar');
 
 function openModal() {
+	console.log('abriu');
 	const sidebar_wrapper = document.querySelector('#sidebar_wrapper');
 	const sidebar = document.querySelector('#sidebar');
 
